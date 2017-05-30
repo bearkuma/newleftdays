@@ -35,7 +35,7 @@ function procAPI(x, response, request) {
 				var X_YEAR = 2018,
 				X_MONTH = 2,
 				X_DAY = 10,
-				X_HOUR = -9,
+				X_HOUR = -9,//サーバーで取得した時間が日本の時間と9時間の時差を生じるため-9する。
 				X_MINITE = 0,
 				X_SECOND = 0;
 				var test = new Date(X_YEAR, X_MONTH - 1, X_DAY, X_HOUR, X_MINITE, X_SECOND);
