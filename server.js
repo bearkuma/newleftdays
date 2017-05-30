@@ -47,6 +47,6 @@ function procAPI(x, response, request) {
 				var hour = Math.floor(rest / 1000 / 60 / 60) % 24;
 				var day = Math.floor(rest / 1000 / 60 / 60 / 24) % 365 ;				
 	
-	response.write('<body style = "background-color:#AAF">' + '<div style = "margin:150px auto; text-align: center;">' + '<h2 style = "font-size:80px;">' + '第112回医師国家試験まで' + '</h2>' + '<br>'+ '<br>'+ '<p style = "font-size: 50px;">' + 'あと' + '<span style ="font-size:80px;">' + day + '</span>' + '日' + '<span style ="font-size:80px;"> ' + hour + '</span>' + '時間' + '<span style ="font-size:80px;">' + min + '</span>' + '分' + '<span style ="font-size:80px;">' + sec + '</span>' + '秒' + '</p>' + '</div>');
+	response.write('<body style = "background-color:#AAF">' + '<div style = "margin:150px auto; text-align: center;">' + '<h2 style = "font-size:80px;">' + '第112回医師国家試験まで' + '</h2>' + '<br>'+ '<br>'+ '<p style = "font-size: 50px;">' + 'あと' + '<span style ="font-size:80px;">' + day + '</span>' + '日' + '<span style ="font-size:80px;"> ' + hour + '</span>' + '時間' /*+ '<span style ="font-size:80px;">' + min + '</span>' + '分' + '<span style ="font-size:80px;">' + sec + '</span>' + '秒' */+ '</p>' + '</div>');
 	response.end();
 }
