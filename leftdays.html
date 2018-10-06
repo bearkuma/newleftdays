@@ -30,15 +30,7 @@
 				font-size:80px;
 			}
 		</style>
-	</head>
-	<body>
-		<div class = "contents">
-			<h2>平成終了まで</h2>
-			<br>
-			<br>
-			<p class = "timer">残り<span id = "day">〇</span>日<span id = "hour">〇</span>時間<span id ="min">〇</span>分<span id = "sec">〇</span>秒</p>
-		</div>
-		<script>
+				<script>
 			var countdown = function(due){
 				
 				var now = new Date();		
@@ -75,12 +67,20 @@
 				refresh();
 			}
 			
-			//var refresh = function() {
+			var refresh = function() {
 				setTimeout(again , 1000);
 			}
 			
 			again();
-
 		</script>
+	</head>
+	<body>
+		<div class = "contents">
+			<h2>平成終了まで</h2>
+			<br>
+			<br>
+			<p class = "timer">残り<span id = "day">〇</span>日<span id = "hour">〇</span>時間<span id ="min">〇</span>分<span id = "sec">〇</span>秒</p>
+		</div>
+
 	</body>
 </html>
